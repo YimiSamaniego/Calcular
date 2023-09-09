@@ -66,6 +66,11 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         jButton3.setText("MULIPLICAR");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,6 +152,16 @@ public class Calculadora extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(this, "Resta: " + s);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        double n1 = Double.parseDouble(txtnro1.getText());
+        double n2 = Double.parseDouble(txtnro2.getText());
+        
+        double s = n1 * n2;
+        
+        JOptionPane.showMessageDialog(this, "Resta: " + s);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
